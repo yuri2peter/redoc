@@ -4,17 +4,17 @@ import logo from './logo.svg';
 import './index.sass';
 import defines from '../../../common/defines';
 
-class Example extends Component {
-  inputRef = null;
-
-  render() {
-    const Env = styled.span`
+const Env = styled.span`
       position: absolute;
       top: 4px;
       right: 4px;
       color: darkgrey;
       font-size: 12px;
     `;
+class Example extends Component {
+  inputRef = null;
+
+  render() {
     return (
       <div className="App">
         <Env>
@@ -25,14 +25,15 @@ class Example extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo"/>
           <p className="App-server-hint">
-            Start your server by <code>npm run build && npm run server</code></p>
+            npm ci && npm start
+          </p>
           <a
             className="App-link"
-            href="https://github.com/yuri2peter/reacoa.git"
+            href="https://github.com/yuri2peter/redoc"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn Reacoa
+            Learn Redoc
           </a>
         </header>
       </div>
